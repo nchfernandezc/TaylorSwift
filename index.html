@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Taylor Swift - The Eras Tour</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><a href="#">ts</a></div>
+    </nav>
+    <header>
+      <div class="section__container">
+        <div class="header__content">
+          <h1>The Eras Tour</h1>
+          <p>
+            Es la sexta gira de conciertos de la cantante y compositora estadounidense Taylor Swift. 
+            Después de no haber realizado la gira de sus álbumes de estudio en 2019, 2020 y 2021 con Lover, 
+            Folklore y Evermore debido a la pandemia de COVID-19, Swift se embarca en The Eras Tour en apoyo 
+            de todos sus álbumes, incluyendo su último álbum, Midnights (2022).
+          </p>
+          <button id="smoothScrollButton">Lee más</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="paises" class="journey__container">
+      <div class="section__container">
+        <h2 class="section__title">Algunos de los lugares que ha visitado</h2>
+        <p class="section__subtitle">En lo que va del año 2023!</p>
+        <div class="journey__grid">
+          <div class="country__card">
+            <img src="assets/chicago.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Chicago, IL</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="assets/seattle.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Seattle, WA</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="assets/glendale.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Glendale, AZ</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="assets/losangeles.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Los Angeles, CA</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="assets/mexico.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i> 
+              <span>Mexico City, Mexico</span>
+            </div>
+          </div>
+          <div class="country__card">
+            <img src="assets/lasvegas.jpg" alt="country" />
+            <div class="country__name">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Las Vegas, NV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner__container">
+      <div class="section__container">
+        <div class="banner__content">
+          <h2>Recaudando hasta ahora más de 700 millones <br>de dólares en ventas de boletos.</h2>
+          <p>
+            El catálogo de Swift repleto de éxitos que definieron una generación y un astuto 
+            sentido del mercadeo la han ayudado a obtener un nivel de demanda candente y de 
+            saturación de los medios que no se veía desde el apogeo de Michael Jackson y Madonna 
+            en la década de 1980, un dominio que la industria del entretenimiento había aceptado 
+            en gran medida como imposible de replicar en el fragmentado siglo XXI.
+          </p>
+          <form action="https://www.taylorswift.com/tour" method="get" target="_blank">
+            <button type="submit">See Tours</button>
+        </form>        
+        </div>
+      </div>
+    </section>
+
+    <section class="display__container">
+      <div class="section__container">
+        <h2 class="section__title">The Eras Tour Film</h2>
+        <p class="section__subtitle">
+          Lanzado el pasado 13 de octubre, se presenta como un espectáculo cinematográfico altamente anticipado <br> que emocionó 
+          a los seguidores de la renombrada superestrella de la música estadounidense. <br><br>Dirigida por Sam Wrench, esta película 
+          captura la esencia única del Eras Tour de Taylor Swift.
+        </p>
+        <div class="display__grid">
+          <div class="display__card grid-1">
+            <img src="assets/film1.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <p>La filmación se llevó a cabo en agosto de 2023 durante tres fechas en el SoFi Stadium de Inglewood, California.</p>
+          </div>
+          <div class="display__card">
+            <img src="assets/film2.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <img src="assets/film3.jpg" alt="grid" />
+          </div>
+          <div class="display__card">
+            <p>Una de las sorpresas más gratas fue la respuesta de los fanáticos cuando las preventas de la película superaron los 10 millones de dólares en cuestión de horas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container">
+        <h4>ts.</h4>
+        <div class="social__icons">
+          <span><i class="ri-facebook-fill" onclick="redirectTo('https://www.facebook.com/taylorswift')"></i></span>
+          <span><i class="ri-twitter-fill" onclick="redirectTo('https://twitter.com/taylorswift13')"></i></span>
+          <span><i class="ri-instagram-line" onclick="redirectTo('https://www.instagram.com/taylorswift/')"></i></span>
+        </div>
+        <p>
+          © 2023 Copyright: Nairuma Fernández.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  document.getElementById("smoothScrollButton").addEventListener("click", function() {
+    const section = document.getElementById("paises");
+    section.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  });
+
+
+  function redirectTo(url) {
+        window.open(url, '_blank');
+  }
+
+</script>
+  
